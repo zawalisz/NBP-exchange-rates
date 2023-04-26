@@ -5,11 +5,17 @@ This is a simple Flask application that exposes endpoints to query exchange rate
 To get started with the application, you can follow these steps:
 
 1. Clone the repository:
+'''
 $ git clone https://github.com/Zawalisz/nbp-exchange-rates-api.git
+'''
 2. Install the required dependencies:
+'''
 $ pip install -r requirements.txt
+'''
 3. Run the application:
+'''
 $ python app.py
+'''
 The application will be available at http://localhost:5000.
 
 ## Usage
@@ -28,26 +34,32 @@ The response will be a JSON object with the average exchange rate for the specif
 
 ### 2. Get the maximum and minimum exchange rate for a given currency code and number of recent rates
 To get the maximum and minimum exchange rate for a specific currency code and number of recent rates, make a GET request to the following endpoint:
-
+'''
 $ /exchanges/<currency_code>/<num_of_rates>
+'''
 currency_code: The 3-letter code for the currency you want to get the exchange rate for.
 num_of_rates: The number of recent rates you want to get the maximum and minimum exchange rate for. The maximum value is 255.
 For example, to get the maximum and minimum exchange rate for the last 10 rates of GBP:
-
+'''
 $ GET /exchanges/GBP/10
+'''
 The response will be a JSON object with the maximum and minimum exchange rate for the specified currency and number of rates.
 
 ### 3. Get the major difference between buying and selling exchange rates for a given currency code and number of recent rates
 To get the major difference between buying and selling exchange rates for a specific currency code and number of recent rates, make a GET request to the following endpoint:
-
+'''
 $ /exchanges/difference/<currency_code>/<num_of_rates>
+'''
 currency_code: The 3-letter code for the currency you want to get the exchange rate for.
 num_of_rates: The number of recent rates you want to get the major difference between buying and selling exchange rates for. The maximum value is 255.
 For example, to get the major difference between buying and selling exchange rates for the last 20 rates of USD:
-
+'''
 $ GET /exchanges/difference/USD/20
+'''
 The response will be a JSON object with the major difference between buying and selling exchange rates for the specified currency and number of rates.
 
 ## Running Tests
 To run the tests for the application, run the following command:
+'''
 $ python -m pytest
+'''
