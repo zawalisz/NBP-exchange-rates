@@ -48,6 +48,6 @@ For example, to get the major difference between buying and selling exchange rat
 $ GET /exchanges/difference/USD/20
 The response will be a JSON object with the major difference between buying and selling exchange rates for the specified currency and number of rates.
 
-Running Tests
+## Running Tests
 To run the tests for the application, run the following command:
-python -m pytest
+$ python -m pytest
