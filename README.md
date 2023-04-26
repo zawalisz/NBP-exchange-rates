@@ -1,4 +1,4 @@
-﻿# NBP-exchange-rates
+﻿# NBP exchange rates
 This is a simple Flask application that exposes endpoints to query exchange rate data from the Narodowy Bank Polski's public APIs.
 
 ## Getting Started
@@ -23,8 +23,9 @@ The API has the following endpoints:
 
 ### 1. Get the average exchange rate for a given date and currency code
 To get the average exchange rate for a specific date and currency code, make a GET request to the following endpoint:
-
+```
 /exchanges/<currency_code>/<date>
+```
 ***currency_code***: The 3-letter code for the currency you want to get the exchange rate for.  
 ***date***: The date you want to get the exchange rate for, in the format YYYY-MM-DD.  
 For example, to get the average exchange rate for GBP on January 2, 2023:
