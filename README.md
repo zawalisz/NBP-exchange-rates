@@ -25,8 +25,8 @@ The API has the following endpoints:
 To get the average exchange rate for a specific date and currency code, make a GET request to the following endpoint:
 
 /exchanges/<currency_code>/<date>
-currency_code: The 3-letter code for the currency you want to get the exchange rate for.
-date: The date you want to get the exchange rate for, in the format YYYY-MM-DD.
+currency_code: The 3-letter code for the currency you want to get the exchange rate for.  
+date: The date you want to get the exchange rate for, in the format YYYY-MM-DD.  
 For example, to get the average exchange rate for GBP on January 2, 2023:
 
 GET /exchanges/GBP/2023-01-02
@@ -37,8 +37,8 @@ To get the maximum and minimum exchange rate for a specific currency code and nu
 ```
 $ /exchanges/<currency_code>/<num_of_rates>
 ```
-currency_code: The 3-letter code for the currency you want to get the exchange rate for.
-num_of_rates: The number of recent rates you want to get the maximum and minimum exchange rate for. The maximum value is 255.
+currency_code: The 3-letter code for the currency you want to get the exchange rate for.  
+num_of_rates: The number of recent rates you want to get the maximum and minimum exchange rate for. The maximum value is 255.  
 For example, to get the maximum and minimum exchange rate for the last 10 rates of GBP:
 ```
 $ GET /exchanges/GBP/10
@@ -50,8 +50,8 @@ To get the major difference between buying and selling exchange rates for a spec
 ```
 $ /exchanges/difference/<currency_code>/<num_of_rates>
 ```
-currency_code: The 3-letter code for the currency you want to get the exchange rate for.
-num_of_rates: The number of recent rates you want to get the major difference between buying and selling exchange rates for. The maximum value is 255.
+currency_code: The 3-letter code for the currency you want to get the exchange rate for.  
+num_of_rates: The number of recent rates you want to get the major difference between buying and selling exchange rates for. The maximum value is 255.  
 For example, to get the major difference between buying and selling exchange rates for the last 20 rates of USD:
 ```
 $ GET /exchanges/difference/USD/20
